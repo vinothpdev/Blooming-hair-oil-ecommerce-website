@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pesonalform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     
+  
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h2>Blooming Hairoil</h2>
+        
+        <a href="blooming.html">Home</a>
+        <a href="howtouse.html">How to use</a>
+        <a href="contactus.html">Contact Us</a>
+       <p>
+        Track Order:<input type="number" maxlength="6" required><button class="btn">Search</button>
+       </p>
+      </nav>
+      <h3 id="cod">Cash On Delivery Not Available!</h3>
+      <div class="container">
+        
+        <form action="" id="form">
+        <div class="row">
+            
+            <div class="col"> 
+                <h3 class="title">Billing Address</h3>
+                <div class="inputbox">
+                    <span><label>Full Name:</label></span>
+                    <input type="text" placeholder="Eg: kumar K" id="name" onkeyup="validateName()">
+                    <small id="error-name"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>Mobile Number:</label></span>
+                    <input type="number" placeholder="Enter Your Mobile Number" id="mob" onkeyup="validateMob()">
+                    <small id="error-mob"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>E-mail:</label></span>
+                    <input type="email" placeholder="Enter Your Email" id="mail" onkeyup="validateMail()">
+                    <small id="error-mail"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>Address:</label></span>
+                    <input type="text" placeholder="door no- street- locality" id="address" onkeyup="validateAddress()">
+                <small id="error-address"></small>
+            </div>
+                <div class="inputbox">
+                    <span><label>City:</label></span>
+                    <input type="text" placeholder="Enter Your City" id="city" onkeyup="validateCity()">
+                    <small id="error-city"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>State:</label></span>
+                    <input type="text" placeholder="Enter Your State" id="state" onkeyup="validateState()">
+                    <small id="error-state"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>Pincode:</label></span>
+                    <input type="number" placeholder="Enter Your Pincode" id="code" onkeyup="validateCode()">
+                    <small id="error-code"></small>
+                </div>
+
+            </div>
+            <div class="col">
+                <h3 class="title">Payment Mode</h3>
+                
+                    <span><h4>Online Pay</h4></span>
+                
+                <div class="inputbox">
+                    <img src="paypal-iptal.jpg">
+                </div>
+                <div class="inputbox">
+                    <span><label>Card Name:</label></span>
+                    <input type="text" placeholder="Enter Card Name" id="cname" onkeyup="validateCname()">
+                    <small id="error-cname"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>Card Number:</label></span>
+                    <input type="text" placeholder="1111-2222-3333-4444" id="cnum" onkeyup="validateCnum()">
+                    <small id="error-cnum"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>Expiry Date:</label></span>
+                    <input type="month" id="expiry" onkeyup="validateExpiry()">
+                    <small id="error-expiry"></small>
+                </div>
+                <div class="inputbox">
+                    <span><label>CVV:</label></span>
+                    <input type="text" placeholder="111" id="cvv" onkeyup="validateCvv()">
+                    <small id="error-cvv"></small>
+                </div>
+
+            </div>
+
+        </div>
+        <input type="submit" value="Proceed To Pay" class="submit ">
+    </form>
+      </div>
+      <section id=endpage>
+        <div class="row">
+          <div class="col">
+            <div>
+             <h4>Quick Links</h4>
+             <ul>
+              <li><a href="personalform">Add Cart</a></li>
+              <li><a href="howtouse.html">How To Use</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+             </ul>
+            
+            </div>
+        
+          </div>
+          <div class="col">
+            <h4>Contact Us</h4>
+            <h5>Toll Free: 1000 1000 1000</h5>
+            <h5>E-Mail: <a href="#">bloominghairoil@gmail.com</a></h5>
+            <button><a href="#">Chat With Us</a></button>
+          </div>
+          <div class="col">
+            <h4>Courier Partner</h4>
+            <ul>
+              <li>Fedex</li>
+              <li>Blue Dart</li>
+              <li>Ecom Express</li>
+              
+            </ul>
+            
+             
+          </div>
+        
+          <div class="col">
+            <h4 >Social Media</h4>
+            <ul class="social">
+              <li ><a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
+              <li ><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li ><a href="#"><i class="fa-brands fa-youtube"></i> </a> </li>
+              <li ><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+              
+          </ul>
+          </div>
+        </div>
+        
+              </section>
+
+
+<script>
+    
+       const errorName=document.getElementById('error-name');
+       const errorMob=document.getElementById('error-mob');
+       const errorMail=document.getElementById('error-mail');
+       const errorAddress=document.getElementById('error-address');
+       const errorCity=document.getElementById('error-city');
+       const errorState=document.getElementById('error-state');
+       const errorCode=document.getElementById('error-code');
+       const errorCname=document.getElementById('error-cname');
+       const errorCnum=document.getElementById('error-cnum');
+       const errorExpiry=document.getElementById('error-expiry');
+       const errorCvv=document.getElementById('error-cvv');
+
+ 
+       function validateName(){
+        var name=document.getElementById("name").value;
+        if(name.length == 0){
+            errorName.innerHTML = 'Name Is Required';
+            return false;
+        }
+        if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+            errorName.innerHTML = 'Enter Correct Name';
+            return false;
+        }
+        errorName.innerHTML = 'valid';
+        return true;
+       }
+
+       function validateMob(){
+        var mob=document.getElementById("mob").value;
+        if(mob.length == 0){
+            errorMob.innerHTML = 'Mobile Number Is Required';
+            return false;
+        }
+        if(!mob.match(/^([0-9]{10})$/)){
+            errorMob.innerHTML = 'Enter Correct Mobile Number';
+            return false;
+        }
+        errorMob.innerHTML = 'valid';
+        return true;
+       }
+
+       function validateMail(){
+        var mail=document.getElementById("mail").value;
+        if(mail.length == 0){
+            errorMail.innerHTML = 'E-mail ID Is Required';
+            return false;
+        }
+        if(!mail.match(/^([a-z0-9])+\@([a-z]{5})+\.([a-z]{3})+$/)){
+            errorMail.innerHTML = 'Enter Valid E-mail ID';
+            return false;
+        }
+        errorMail.innerHTML = 'valid';
+        return true;
+       }
+
+
+       function validateAddress(){
+        var address=document.getElementById("address").value;
+        if(address.length == 0){
+            errorAddress.innerHTML = 'Address Is Required';
+            return false;
+        }
+        
+        errorAddress.innerHTML = 'valid';
+        return true;
+       }
+
+
+
+       function validateCity(){
+        var city=document.getElementById("city").value;
+        if(city.length == 0){
+            errorCity.innerHTML = 'City Is Required';
+            return false;
+        }
+        
+        errorCity.innerHTML = 'valid';
+        return true;
+       }
+
+
+       function validateState(){
+        var state=document.getElementById("state").value;
+        if(state.length == 0){
+            errorState.innerHTML = 'State Is Required';
+            return false;
+        }
+        
+        errorState.innerHTML = 'valid';
+        return true;
+       }
+
+
+       function validateCode(){
+        var code=document.getElementById("code").value;
+        if(mob.length == 0){
+            errorCode.innerHTML = 'Pincode Is Required';
+            return false;
+        }
+        if(!code.match(/^([0-9]{6})$/)){
+            errorCode.innerHTML = 'Enter Correct Pincode';
+            return false;
+        }
+        errorCode.innerHTML = 'valid';
+        return true;
+       }
+
+
+
+       function validateCname(){
+        var cname=document.getElementById("cname").value;
+        if(cname.length == 0){
+            errorCname.innerHTML = 'Card Name Is Required';
+            return false;
+        }
+        if(!cname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+            errorCname.innerHTML = 'Enter Correct Name';
+            return false;
+        }
+        errorCname.innerHTML = 'valid';
+        return true;
+       }
+
+
+       function validateCnum(){
+        var cnum=document.getElementById("cnum").value;
+        if(mob.length == 0){
+            errorCnum.innerHTML = 'Card Number Is Required';
+            return false;
+        }
+        if(!cnum.match(/^([0-9]{16})$/)){
+            errorCnum.innerHTML = 'Enter Correct Card Number';
+            return false;
+        }
+        errorCnum.innerHTML = 'valid';
+        return true;
+       }
+
+
+       function validateCvv(){
+        var cvv=document.getElementById("cvv").value;
+        if(cvv.length == 0){
+            errorCvv.innerHTML = 'Enter CVV on Card';
+            return false;
+        }
+        if(!cvv.match(/^([0-9]{3})$/)){
+            errorCvv.innerHTML = 'Enter Correct Number';
+            return false;
+        }
+        errorCvv.innerHTML = 'valid';
+        return true;
+       }
+
+       
+
+
+
+
+
+
+
+
+       
+
+
+    
+
+
+</script>
+
+
+</body>
+</html>

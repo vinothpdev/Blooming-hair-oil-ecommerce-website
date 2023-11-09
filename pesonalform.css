@@ -1,0 +1,132 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-size: 1.02em;
+    
+  }
+  body #cod{
+    background-color: red;
+  margin-top: 15px;
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  }
+  
+  .navbar{
+    position: relative;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+     background: black;
+     right: 20px;
+   }
+   .navbar h2{
+     font-size: 40px;
+     font-weight: 700;
+     color: green;
+   }
+   .navbar a{
+   color: white;
+   font-size: 25px;
+   border-bottom: 3px solid transparent;
+   text-decoration: none;
+   }
+   .navbar a:hover{
+     border-bottom: solid green;
+   }
+   .navbar p{
+     color: white;
+     font-size: 20px;
+     margin-top: 5px;
+   }
+   .navbar button{
+     background: green;
+     border-radius: 10px;
+     color: white;
+   }
+   .container form .row img{
+    width: 200px;
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: rgb(94, 213, 94);
+    padding-bottom: 15px;
+    border-radius: 50px;
+    
+    
+   }
+   .container form{
+    padding: 10px;
+    padding-top: 15px;
+    
+    width: 900px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   }
+
+   .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+   }
+   .container form .row .col{
+    flex: 1 1 250px;
+   }
+   .container form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+   }
+   .container form .row .col .inputbox{
+    margin: 10px 0;
+    
+   }
+   .container form .row .col .inputbox span{
+    margin-bottom: 2px;
+    display: block;
+   }
+   .container form .row .col .inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;padding-top: 5px;
+   }
+   .container form .row .col .inputbox input:focus{
+    border: 1px solid #000;
+   }
+   .container form .submit{
+   
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 10px;
+    border-radius: 20px;
+
+   }
+   .container form .submit:hover{
+    background-color: #000;
+   }
+   .container form small{
+     position: relative;
+     color: red;
+}
+
+

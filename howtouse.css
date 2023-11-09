@@ -1,0 +1,78 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.02em;
+
+}
+#green{
+    background-color: rgb(50, 148, 50);
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 30px;
+    color: white;
+    
+}
+
+    #red{
+        background-color: rgb(225, 43, 43);
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 30px;
+        color: white;
+    }
+
+    #unique{
+        background-color: rgb(96, 136, 246);
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .row .col .difference span img {
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+        
+
+    }
+    .row .col #yes{
+        background-color: rgb(50, 148, 50);
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 30px;
+        color: white;
+    }
+    .row .col #no{
+        background-color: rgb(225, 43, 43);
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 30px;
+        color: white;
+    }
+    .row .col p{
+        color: blue;
+    }
+   
